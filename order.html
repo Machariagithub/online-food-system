@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <title>Food Order System</title>
+        <link rel="stylesheet" href="PT style.css">
+    </head>
+    <body>
+        
+        <!--navigationbar section starts here-->
+        <section class="navbar">
+            <div class="container">
+              <div class="logo">
+                <a href="#" title="Logo">
+                    <img src="images/logo.png" alt="Restaurant Logo" class="img-responsive"> 
+                </a>
+              </div>
+              <div class="menu text-right">
+                <ul>
+                    <li>
+                        <a href="PTHome.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="categories.html">CATEGORIES</a>
+                    </li>
+                    <li>
+                        <a href="food.html">FOODS</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT</a>
+                    </li>
+                </ul>
+              </div>  
+              <div class="clearfix"></div>
+            </div>
+        </section>
+        <!--food search section-->
+        <section class="food-search">
+            <div class="container">
+                <h2 class="text-center text-white">Fill this form to confirm your order.</h2>
+                <form action="#" class="order">
+                    <fieldset>
+                        <lengend>Selected Food</lengend>
+                        <div class="food-menu-img">
+                            <img src="images/menu-pizza.jpg" alt="Chicke Hawain pizza" class="img-responsive img-curve">
+                        </div>
+                        <div class="food-menu-desc">
+                            <h3>Food Title</h3>
+                            <p class="food-price">Ksh/=1250</p>
+                            <div class="order-label">Quantity</div>
+                            <input type="number" name="qty" class="input-responsive" value="1" required>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+                        
+                        <legend>Delivery Details</legend>
+                        <div class="order-label">Full Name</div>
+                        <input type="text" name="full-name" placeholder="E.g. Edwin Macharia" class="input-responsive" required>
+                        <div class="order-label">Phone Number</div>
+                        <input type="tel" name="contact" placeholder="E.g. +254 721 xxx xxx" class="input-responsive" required>
+                        <div class="order-label">Email</div>
+                        <input type="email" name="email" placeholder="E.g. edwingathogoxxx@gmail.com" class="input-responsive" required>
+                        <div class="order-label">Address</div>
+                        <textarea name="address" rows="10" placeholder="E.g. Street, City, Country" class="input-responsive" required></textarea>
+                        <input type="submit" name="submit" value="Confirm Order" class="btn btn-primary">
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <section class="social">
+        <div class="container text-center">
+            <ul>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/48/000000/twitter.png"/></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+
+    <!-- footer Section Starts Here -->
+    <section class="footer">
+        <div class="container text-center">
+            <p>All rights reserved. Designed By <a href="#">EDU</a></p>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>LOGIN- Food Ordering System</title>
+    <link rel="stylesheet" href="PT style.css">
+	<script>
+		function validateform(){
+			var username = document.myform.username.value;
+			var password = document.myform.password.value;
+			if(username == null || username == ""){
+				alert("Username can't be blank");
+				return false;
+			}else (password.length<6) {
+				alert("password must be atleast six characters ");
+				return false;
+			}
+		}
+		</script>   
+</head>
+<body>
+<div class="login">
+    <h1>Login</h1>
+    <form action="PTHome.html" method="POST" onsubmit="return validateform()">
+        USERNAME:
+        <input type="text" name="username" placeholder="Enter Username"><br><br>
+        PASSWORD:
+        <input type="password" name="password" placeholder="Enter Password"><br><br>
+        <input type="submit" value="Login">
+
+    </form>
+    <p>created By-<a href="www.edunary">EDU</a></a></p>
+</div>
+</body>
+</html>
+
+<?php
+if(isset($_POST['SUBMIT']))
+{
+    echo $username = $_POST['username'];
+   echo $password = $_POST['password'];
+
+   $sql ="SELECT * FROM LOGin WHERE username='$username' AND password='$passward'";
+  $res =mysql_query($conn,$sql);
+  $count = mysql_name_rows($res);
+  if($count==1){
+$session['login'] ="<div class='success'>login successful</div>";
+header("")
+  }
+  else{
+    $session['login'] ="<div class='success'>login failed</div>";
+header("
+
+  }
+}
+?>
